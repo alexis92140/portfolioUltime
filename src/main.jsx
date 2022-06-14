@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import App from "./App";
+import Doors from "./Doors";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
+    <Doors />
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById("root")
 );
