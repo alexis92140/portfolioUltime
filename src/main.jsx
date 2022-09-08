@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Video from "./components/Video";
 import App from "./App";
-import Doors from "./Doors";
 
 ReactDOM.render(
   <div>
-    <Doors />
+    <Video />
     <App />
   </div>,
   document.getElementById("root")
