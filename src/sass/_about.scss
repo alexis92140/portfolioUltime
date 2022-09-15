@@ -1,8 +1,214 @@
-.Header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  position: relative;
+.Page {
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+  position: absolute;
+  justify-content: center;
+  width: 95vw;
+  color: white;
+  pointer-events: all;
+  margin: 2%;
+  gap: 25%;
+
+  &__description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 24vw;
+    background: #211510;
+    box-shadow: inset 0 0 2em rgb(0, 0, 0), 0 0 0.3em rgb(64, 66, 73);
+    border: 0.001em solid #504137;
+    font-family: "Friz Quadrata Std Medium";
+    letter-spacing: 0.05rem;
+    transition: 0.5s all ease-in-out;
+    color: rgb(188, 188, 188);
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 8px 10px rgba(0, 0, 0, 0.8);
+    margin: 0.1em;
+    padding: 0.5em 0 1.5em 0;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      transform-origin: center;
+      outline: solid 0.07em rgba(223, 156, 24);
+    }
+    &__Animation {
+      animation: key1 2s ease infinite alternate;
+    }
+    &__TypeEffect {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 11.5em;
+      opacity: 0;
+      -webkit-animation: type2 4s steps(40, end);
+      animation: type2 4s steps(40, end);
+      -webkit-animation-delay: 24;
+      animation-delay: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      white-space: nowrap;
+
+      font-size: 25px;
+    }
+    &__ButtonModal {
+      font-family: "Friz Quadrata Std Medium";
+      letter-spacing: 0.05rem;
+      transition: 0.5s all ease-in-out;
+      color: rgb(188, 188, 188);
+      font-size: medium;
+      font-weight: bolder;
+      text-shadow: 1px 8px 10px rgba(0, 0, 0, 0.8);
+      box-shadow: inset 0 0 2em rgb(0, 0, 0), 0 0 0.3em rgba(223, 156, 24);
+      border: 0.001em solid rgba(255, 255, 255, 0.053);
+      margin: 0.1em;
+      padding: 1em 0 1em 0;
+      min-width: 10em;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 0.5em;
+      transition: all 0.2s linear;
+      background-image: url(/assets/DoorMenu.png);
+      background-position: center;
+      text-decoration-line: none;
+      cursor: pointer;
+      &:active {
+        /* Scaling button to 0.98 to its original size */
+        box-shadow: 1px 1px 15px 1px rgba(223, 156, 24);
+        /* Lowering the shadow */
+      }
+    }
+
+    &__Portrait {
+      padding: 1vh;
+
+      &__Name {
+        border-left: #cadbe8 solid 0.1em;
+        border-right: #7f8589 solid 0.1em;
+        border-top: #7d8489 solid 0.1em;
+        border-bottom: #8d8e8f solid 0.1em;
+        border-width: 0.4vh;
+        background-color: #141414b6;
+
+        h4 {
+          color: rgb(188, 188, 188);
+        }
+        h6 {
+          color: green;
+        }
+      }
+    }
+    &__Portrait2 {
+    }
+
+    &__Infos {
+      margin-top: 10%;
+      ul {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      li {
+        justify-content: space-evenly;
+        font-size: 10px;
+        list-style: none;
+      }
+    }
+  }
+  @keyframes key1 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-4px);
+    }
+  }
+
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      border: none;
+    }
+  }
+
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      border: none;
+    }
+  }
+
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
 }

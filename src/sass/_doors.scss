@@ -13,8 +13,6 @@
 .elm {
   position: relative;
   pointer-events: all;
-  &:hover {
-  }
 }
 .elmhidden {
   transition: ease-in-out 2s;
@@ -58,17 +56,8 @@
   top: 50%;
   z-index: 9;
   margin: 0 auto;
-
   transition: all 1s ease-in-out;
-  // &:hover {
-  //   cursor: pointer;
-  //   & ~ .sliding-door--left {
-  //     left: -20px;
-  //   }
-  //   & ~ .sliding-door--right {
-  //     right: -20px;
-  //   }
-  // }
+
   & > div {
     width: 9vh;
     height: 7vh;
@@ -93,7 +82,5 @@
   }
   &--opened {
     transform: rotate(90deg);
-    // top: 120vh;
-    // transition: right 2s ease-in-out 2s;
   }
 }

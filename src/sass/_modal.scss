@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.836);
+  cursor: pointer;
+}
+
+.modal__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0% 27%;
+  padding: 20%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-shadow: 1px 8px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 2em rgb(0, 0, 0), 0 0 0.3em rgba(223, 156, 24);
+  border: 0.001em solid rgba(255, 255, 255, 0.053);
+  background-repeat: no-repeat;
+  background-image: url("assets/worldmap.jpg");
+  cursor: auto;
+}
+
+.modal__title {
+  color: #f8f8f8;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal__content {
+  margin-top: 30px;
+  color: #6b6b6b;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: #f8f8f8;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  width: 5%;
+  border: rgb(74, 57, 57) solid 0.2em;
+  background-color: rgba(223, 156, 24);
+  right: 20px;
+  border-radius: 20rem;
+  transition: transform 250ms ease-in-out;
+  transform-origin: 50% 50%;
+}
+.modal__icons {
+  height: 50vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10vw;
+  gap: 10%;
+  cursor: pointer;
+  animation: key1 0.3s ease infinite alternate;
+}
+
+.modal__infos {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20vw;
+  gap: 10%;
+  font-size: 20px;
+  p {
+    border: solid 0.02em rgba(223, 156, 24);
+    background-color: #242323;
+  }
+}

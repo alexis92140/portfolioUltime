@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import "../App.scss";
-import WorkCards from "../data";
+import WorkCards from "../data.js";
 
 const Work = () => {
+  // THAT SECTION DISPLAY THE CARDS WEBSITES
   return (
     <div className="work">
       {WorkCards &&
@@ -17,8 +18,8 @@ const Work = () => {
                     src={img}
                     alt="ok"
                     style={{
-                      width: "300px",
-                      height: "47vh",
+                      width: "220px",
+                      height: "57vh",
                     }}
                   />
                 </a>

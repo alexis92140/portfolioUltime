@@ -1,13 +1,13 @@
 const WorkCards = [
   {
-    img: "src/assets/drakebleu.jpg",
+    img: "src/assets/spaceCastle.jpg",
     title: "Plenty of Space",
     desc: "First space estate",
     tech: "React - JavaScript - Tailwind",
     link: "https://plenty-of-space.vercel.app/#/",
   },
   {
-    img: "src/assets/drakerouge.jpg",
+    img: "src/assets/forestCastle.jpg",
     title: "Sauve qui peut",
     desc: "NFT for a better world",
     tech: "React - Javascript - Tailwind",
